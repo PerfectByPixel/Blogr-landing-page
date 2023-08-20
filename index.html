@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- favicon icon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+</head>
+<body>
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" role="navigation">
+      <div class="container mt-5">
+        <a class="navbar-brand me-5" href="#">
+          <img src="images/logo.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/icon-hamburger.svg" alt="Icon hamburger open">
+          <img src="images/icon-close.svg" alt="Icon hamburger close" class="d-none">
+        </button>
+        <div class="collapse navbar-collapse primary-navigation" id="navbarNav">
+          <ul class="navbar-nav me-auto bottom-line">
+            <li class="nav-item dropdown">
+              <a class="arrow-dropdown nav-link dropdown-toggle icon-arrow-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Product <span class="icon-down-dark"></span>
+                <img class="arrow-rotate ms-2" src="images/icon-arrow-light.svg" alt="arrow down">
+              </a>
+              <ul class="dropdown-menu primary-navigation-dropdown">
+                <li><a class="dropdown-item" href="#">Overview</a></li>
+                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                <li><a class="dropdown-item" href="#">Features</a></li>
+                <li><a class="dropdown-item" href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="arrow-dropdown nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+                <img class="arrow-rotate ms-2" src="images/icon-arrow-light.svg" alt="arrow down">
+              </a>
+              <ul class="dropdown-menu primary-navigation-dropdown">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="arrow-dropdown nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Connect
+                <img class="arrow-rotate ms-2" src="images/icon-arrow-light.svg" alt="arrow down">
+              </a>
+              <ul class="dropdown-menu primary-navigation-dropdown">
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="line"></div>
+          <form class="form-inline nav-button">
+            <span class="line-space"></span>
+            <button class="btn me-2 text-white" type="submit" data-type="bg-transparent">Login</button>
+            <button class="btn fw-bold" type="submit" data-type="bg-white">Sign Up</button>
+          </form>    
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <section class="hero padding-block" role="region" aria-label="Hero section">
+      <div class="container-fluid text-center pt-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="fw-bold text-white fs-900">A modern publishing platform</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-white fw-light ff-accent pt-2">Grow your audience and build your online brand<p>        
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col mt-4">
+            <button class="btn fw-bold me-2" data-type="bg-white-hero">Start for Free</button>
+            <button class="btn fw-bold" data-type="border-white-hero">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden ff-primary padding-block-section" role="region" aria-label="Describe editor">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-semi-bold clr-primary-900 fs-1">Designed for the future</h2>
+        <div class="row position-relative">
+          <div class="col-12 col-xl-6 d-xl-flex flex-column justify-content-center mt-5 text-center text-xl-start order-last order-xl-first">
+            <h3 class="fw-semi-bold clr-primary-900">Introducing an extensible editor</h3>
+            <p class="paragraph-width mt-3 fw-light clr-neutral-700">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+          
+            <h3 class="fw-semi-bold mt-5 clr-primary-900">Robust content management</h3>
+            <p class="paragraph-width mt-3 fw-light clr-neutral-700">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+          <div class="col-12 col-xl-6 order-first order-xl-last d-flex justify-content-center">
+           <picture class="move-the-right">
+            <source media="(min-width: 1200px)" srcset="images/illustration-editor-desktop.svg">
+            <img src="images/illustration-editor-mobile.svg" alt="">
+           </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gradient-section overflow-hidden padding-block rounded-section" role="region" aria-label="Section presenting State of the Art Infrastructure">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-6 d-inline-flex d-xl-block justify-content-center">
+            <picture class="set-phone-in-place z-2">
+              <img class="img-fluid" src="images/illustration-phones.svg" alt="">
+            </picture>
+            <picture class="position-relative z-1">
+              <img class="set-circle-in-place" src="images/bg-pattern-circles.svg" alt="">
+            </picture>
+          </div>
+          <div class="col-12 col-xl-6 ff-primary clr-neutral-100 z-3 text-center big-margin-top-1 text-xl-start">
+            <h2 class="fw-semi-bold fs-1">State of the Art Infrastructure</h2>
+            <p class="fw-light paragraph-width opacity-75 mt-3">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden ff-primary padding-block-section-laptop padding-block-1" role="region" aria-label="Product Features">
+      <div class="container">
+        <div class="row position-relative">
+          <div class="col-12 col-xl-6 d-flex justify-content-center">
+            <picture class="move-the-left">
+              <source media="(min-width: 1200px)" srcset="images/illustration-laptop-desktop.svg">
+              <img src="images/illustration-laptop-mobile.svg" alt="">
+            </picture>
+          </div>
+          <div class="col-12 col-xl-6 d-xl-flex flex-column justify-content-center big-margin-top text-center text-xl-start big-margin-top-2">
+            <h3 class="fw-semi-bold clr-primary-900">Free, open, simple</h3>
+            <p class="paragraph-width mt-3 fw-light clr-neutral-700">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          
+            <h3 class="fw-semi-bold clr-primary-900 mt-5">Powerful tooling</h3>
+            <p class="paragraph-width mt-3 fw-light clr-neutral-700">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="padding-block clr-neutral-900 ff-accent" role="contentinfo" aria-label="Footer Navigation">
+    <nav class="secondary-navigation">
+      <div class="container text-center text-lg-start">
+        <div class="row list-style">
+          <div class="col-lg-3 text-center text-lg-start mb-5">
+           <a href="#">
+            <img src="images/logo.svg" alt="logo">
+           </a> 
+          </div>
+          <div class="col-12 col-lg-3 list-style">
+            <ul>
+              <li><a href="#" class="text-white pb-4">Product</a></li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>  
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href="#" class="text-white">Company</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <ul>
+              <li><a href="#" class="text-white pb-4">Connect</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
